@@ -1,18 +1,17 @@
 # Site settings
 environment: development
-title:       Steven M. Ledbetter
-description: "The personal profile of Steven M. Ledbetter."
+title:       Zdan News
+description: "A site to stay updated on Zdan happenings"
 baseurl:     ""
 url:         "http://localhost:4000"
 date_format: "%b %-d, %Y"
 share-image: "/images/share.png"
-admin:      "Steven M. Ledbetter"
-admin_alias: "Coach Stevo"
-admin_email:    "stevo@smledbetter.com"
-admin_title: "Behavior Change Nerd"
+admin:      "Stevo"
+admin_email:    "stevo@zdan.news"
+admin_title: "Son-in-Law"
 admin_twitter: "thecoachstevo"
-admin_image: "boom-stevo-bw.jpg"
-admin_bio: "Helping people who know what to do, but can't make themselves do it since 2008."
+admin_image: "authors/stevo.jpg"
+admin_bio: "Williamsburg raw denim vice art party. Pok pok sustainable +1 cray edison bulb, butcher meh master cleanse. Try-hard artisan polaroid next level kitsch adaptogen pabst coloring book 90's beard venmo jean shorts occupy. Vegan selfies seitan tofu, pop-up bushwick succulents. Narwhal enamel pin lumbersexual microdosing hella vape. Microdosing literally banh mi green juice craft beer dreamcatcher butcher. 3 wolf moon gochujang kombucha snackwave hell of chicharrones."
 admin_city: "Emeryville"
 admin_state: "CA"
 

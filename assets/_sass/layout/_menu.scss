@@ -156,6 +156,7 @@
 	body.is-menu-visible {
 		#wrapper {
 			@include vendor('pointer-events', 'none');
+			@include vendor('transition', 'opacity #{_duration(transition)} ease');
 			cursor: default;
 			opacity: 0.25;
 		}

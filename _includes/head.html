@@ -5,24 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.admin }}">
+    <meta name="google-site-verification" content="2Y2gW8uUjHHY4ER9rymzClihgFd0UhDgfL8F2D7zYDs" />
 
     <!-- JSON-LD -->
 
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "Organization",
-      "name": "{{ site.admin }}",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "{{ site.admin_city }}",
-        "addressRegion": "{{ site.admin_state }}",
-        "postalCode": ""
-      },
-      "telephone": ""
-    }
-    </script>
+        {
+          "@context": "http://schema.org/",
+          "@type": "Person",
+          "name": "{{ site.admin }}",
+          "alternateName": "{{ site.admin_alias }}",
+          "image": "{% if page.share-image %}{{ page.share-image | prepend: site.url }}{% else %}{{ site.share-image | prepend: site.url }}{% endif %}",
+        }
+        </script>
 
     <!-- Search Engine -->
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">

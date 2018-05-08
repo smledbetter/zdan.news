@@ -1,0 +1,52 @@
+/*
+ *
+ * zdan
+ *
+ */
+@import 'shared';
+
+// mixin to extend zdan filter
+// @mixin zdan
+// @param $filters... {filter} - Zero to many css filters to be added
+// @example
+//   img {
+//     @include zdan;
+//   }
+//   or
+//   img {
+//     @include zdan(blur(2px));
+//   }
+//   or
+//   img {
+//     @include zdan(blur(2px)) {
+//       /*...*/
+//     };
+//   }
+
+$background: _palette(fg);
+$gradient1: _palette(color1);
+$gradient2: _palette(color5);
+
+
+@mixin zdan($filters...) {
+  @include filter-base;
+  filter: none $filters;
+  background-color: $background;
+
+  img {
+    filter:grayscale(1);
+  }
+
+  &::after {
+    background: linear-gradient(45deg, $gradient1, $gradient2);
+    mix-blend-mode: overlay;
+  }
+
+  @content;
+}
+
+// zdan Instagram filter
+%zdan,
+.zdan {
+  @include zdan;
+}

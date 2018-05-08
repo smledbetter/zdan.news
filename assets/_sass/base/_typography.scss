@@ -38,6 +38,16 @@
 		line-height: $baseline;
 	}
 
+	q {
+  quotes: "“" "”" "‘" "’";
+		&:before {
+			content: open-quote;
+		}
+		&:after {
+			content: close-quote;
+		}
+	}
+
 	.small {
 		font-size: 85%;
 	}
@@ -98,8 +108,8 @@
 		}
 	}
 
-	h1, h2 {
-		font-family: _font(family-display);
+	h1, h2, h3, h4 {
+		font-family: _font(family-alt);
 	}
 
 	h1 {
@@ -123,12 +133,14 @@
 	}
 
 	h3 {
+		font-weight: 700;
 		font-size: ms(1);
 		line-height: vr(1);
 		line-height: rvr(1);
 	}
 
 	h4 {
+		font-weight: 500;
 		font-size: ms(1);
 		line-height: vr(1);
 		line-height: rvr(1);
