@@ -2,7 +2,7 @@
 title:       Zdan News
 description: "A site to stay updated on Zdan happenings"
 baseurl:     ""
-url:         "zdan.news"
+url:         "http://zdan.news"
 date_format: "%b %-d, %Y"
 share-image: "/images/share.png"
 admin:      "Stevo"
@@ -63,7 +63,7 @@ steam_nickname:
 google_plus_id:
 linkedin_username:
 angellist_username:
-medium_id: 
+medium_id:
 bitcoin_:
 paypal_:
 flattr_button:
